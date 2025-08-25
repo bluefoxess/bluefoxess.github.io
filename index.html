@@ -20,13 +20,14 @@
       align-items: center;
     }
 
+    /* Logo flotante */
     img.logo {
       width: 150px;
       margin-bottom: 20px;
-      animation: bounce 2s infinite;
+      animation: float 2s ease-in-out infinite;
     }
 
-    @keyframes bounce {
+    @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-20px); }
     }
@@ -83,7 +84,7 @@
   </style>
 </head>
 <body>
-  <!-- Logo -->
+  <!-- Logo flotante -->
   <img src="TU_LOGO.png" alt="DINOPUMP Logo" class="logo">
 
   <h1>DINOPUMP 🚀</h1>
