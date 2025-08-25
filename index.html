@@ -7,26 +7,20 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-    /* Reset y centrado absoluto */
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
       font-family: 'Press Start 2P', cursive;
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: #fff;
       text-align: center;
+      display: flex;
       flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
     }
 
-    /* Logo flotante centrado */
+    /* Logo flotante */
     img.logo {
       width: 150px;
       margin-bottom: 20px;
@@ -38,7 +32,6 @@
       50% { transform: translateY(-20px); }
     }
 
-    /* Título con glow */
     h1 {
       font-size: 3em;
       color: #4aff00;
@@ -52,20 +45,15 @@
       to { text-shadow: 2px 2px #ff751a, 0 0 20px #ff751a; }
     }
 
-    /* Mensaje informativo */
-    #info {
-      font-size: 1.2em;
-      margin: 20px 0;
-      color: #00ffff;
-      text-shadow: 1px 1px #ff4d00;
-      max-width: 600px;
+    p {
+      font-size: 1em;
+      margin: 15px 0;
     }
 
-    /* Botón centrado */
     .button {
       display: inline-block;
       padding: 20px 40px;
-      margin: 20px 0;
+      margin: 15px;
       background: #ff4d00;
       color: #fff;
       text-decoration: none;
@@ -81,21 +69,26 @@
       box-shadow: 0 0 25px #ff751a;
     }
 
-    /* Footer centrado */
+    #info {
+      font-size: 1.5em;
+      margin: 30px 0;
+      color: #00ffff;
+      text-shadow: 1px 1px #ff4d00;
+    }
+
     footer {
       margin-top: 50px;
       font-size: 0.8em;
       color: #aaa;
     }
-
   </style>
 </head>
 <body>
   <!-- Logo flotante -->
 <img src="images/TU_LOGO.png" alt="DINOPUMP Logo" class="logo">
 
-
   <h1>DINOPUMP 🚀</h1>
+  <p>¡Prepárate para el lanzamiento de <strong>$DINO</strong>!</p>
 
   <div id="info">
     Les estaremos dando información de lanzamiento por las fuentes oficiales de Telegram y X
@@ -108,6 +101,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
